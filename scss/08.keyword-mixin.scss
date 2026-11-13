@@ -1,0 +1,32 @@
+// .wrap position:relative w=600, h=400
+// .fixed position:fixed t=30, r=40, w=100, h=100
+// .ads position:absolute
+// 크기
+@mixin myScale($w, $h, $bg) {
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+
+@mixin myPos($p: absolute, $t: null, $r: null, $b: null, $l: null) {
+    position: $p;
+    top: $t;
+    right: $r;
+    bottom: $b;
+    left: $l;
+}
+
+.wrap {
+    @include myScale(600px, 400px, skyblue);
+    @include myPos($p: relative);
+
+    .fixed {
+        @include myScale(100px, 100px, pink);
+        @include myPos($p: fixed, $t: 30px, $r: 40px);
+    }
+
+    .abs {
+        @include myScale(200px, 50px, green);
+        @include myPos($l: 50px, $b: 100px);
+    }
+}

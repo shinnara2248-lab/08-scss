@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.nav li {
+  border: 1px solid skyblue;
+}
+
+.main-slider {
+  display: flex;
+  justify-content: space-between;
+  gap: 0;
+}
+.main-slider li {
+  border: 5px solid red;
+}

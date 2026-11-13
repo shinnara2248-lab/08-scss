@@ -1,0 +1,33 @@
+// nav, main-slider flex 
+// nav = 가운데 정렬, gap= 50px
+// nav>li=border 1px solid blue
+// main-slider 양쪽 정렬, gap= 0
+// main-slider>li=border 1px solid red
+
+// flex
+@mixin myFlex($jc, $gap) {
+    display: flex;
+    justify-content: $jc;
+    gap: $gap;
+}
+
+// border
+@mixin myBorder($width, $color) {
+    border: $width solid $color;
+}
+
+.nav {
+    @include myFlex(center, 50px);
+
+    li {
+        @include myBorder(1px, skyblue)
+    }
+}
+
+.main-slider {
+    @include myFlex(space-between, 0);
+
+    li {
+        @include myBorder(5px, red)
+    }
+}

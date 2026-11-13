@@ -1,0 +1,34 @@
+// pc
+// .logo 화면 가운데
+// section 최대 넓이는 1200px, 배경색, 좌우 가운데
+// mobile
+// .logo 왼쪽
+// section 최대 크기는 80% 배경색 핑크
+@mixin myRespond {
+    @media screen and (max-width:767px) {
+        @content;
+    }
+}
+
+header {
+    .logo {
+        text-align: center;
+
+        @include myRespond() {
+            text-align: left;
+        }
+    }
+}
+
+main {
+    section {
+        max-width: 1200px;
+        background: lightblue;
+        margin: 0 auto;
+
+        @include myRespond() {
+            max-width: 80%;
+            background: lightpink;
+        }
+    }
+}

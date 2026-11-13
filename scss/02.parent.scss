@@ -1,0 +1,17 @@
+.menu{
+    display: flex;
+    gap: 20px;
+    >li{
+        list-style: none;
+        >a{
+            color: violet;
+            &:hover{
+                color: aqua;
+                text-decoration: none;
+            }
+            &.active{
+                background: lightcoral;
+            }
+        }
+    }
+}

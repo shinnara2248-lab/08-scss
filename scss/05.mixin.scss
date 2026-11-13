@@ -1,0 +1,29 @@
+// h1, p 글자색, 크기, 두께
+// 후손인 span 밑줄, 글자색 pink
+// h1, p에 마우스 hover하면 배경 skyblue
+// h1 기울기, div 테두리
+
+@mixin text-deco{
+    color: palevioletred;
+    font-size: 30px;
+    font-weight: 800;
+
+    span{
+        text-decoration: underline;
+        color: lightpink;
+    }
+
+    &:hover{
+        background: lightblue;
+    }
+}
+
+h1{
+    font-style: italic;
+    @include text-deco();
+}
+
+div{
+    border: 1px solid black;
+    @include text-deco();
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/01.nesting.css">
+</head>
+<body>
+    <h1>중첩</h1>
+    <h2>규칙 중첩</h2>
+    <p>조상 선택자 안에 후손 선택자를 넣어서 사용한다</p>
+    <section>
+        <div class="list-wrap">
+            <ul class="list">
+                <li>list1
+                    <ul>
+                        <li>list1의 자식</li>
+                    </ul>
+                </li>
+                <li>list2</li>
+                <li>list3</li>
+                <li>list4</li>
+                <li>list5</li>
+            </ul>
+        </div>
+    </section>
+ <hr>
+
+
+    <h2>속성 중첩</h2>
+    <p class="text">css의 속성중 반복되는 요소를 font-family, font-size, font-weight 여기서 font가 중첩된다</p>
+   
+</body>
+</html>

@@ -1,0 +1,27 @@
+h1 {
+  font-style: italic;
+  color: palevioletred;
+  font-size: 30px;
+  font-weight: 800;
+}
+h1 span {
+  text-decoration: underline;
+  color: lightpink;
+}
+h1:hover {
+  background: lightblue;
+}
+
+div {
+  border: 1px solid black;
+  color: palevioletred;
+  font-size: 30px;
+  font-weight: 800;
+}
+div span {
+  text-decoration: underline;
+  color: lightpink;
+}
+div:hover {
+  background: lightblue;
+}

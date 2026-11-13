@@ -1,0 +1,20 @@
+@charset "UTF-8";
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+section .list-wrap .list {
+  display: flex;
+  gap: 30px;
+}
+section .list-wrap .list > li {
+  font-size: 30px;
+  color: aquamarine;
+}
+
+.text {
+  font-family: "궁서";
+  font-size: 40px;
+  font-weight: 900;
+  font-style: italic;
+}

@@ -1,0 +1,18 @@
+// h1, p 글자크기 52px, 밑줄, 두께 600
+// h1 글자색 초록
+// p 글자색 파랑
+@mixin text-style{
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+h1{
+    @include text-style();
+    color: lightgreen;
+}
+
+p{
+    @include text-style();
+    color: lightblue;
+}

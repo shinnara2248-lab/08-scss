@@ -1,0 +1,9 @@
+.list {
+  width: 1000px;
+  display: flex;
+  gap: 30px;
+}
+.list li {
+  list-style: none;
+  border: 1px solid greenyellow;
+}

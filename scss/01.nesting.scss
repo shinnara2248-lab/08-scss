@@ -1,0 +1,31 @@
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .list-wrap {
+        .list {
+            display: flex;
+            gap: 30px;
+
+            >li {
+                font-size: 30px;
+                color: aquamarine;
+            }
+        }
+    }
+}
+
+// 글씨체, 글씨 크기, 글자 두께, 글자스타일
+.text {
+
+    // font-family: "궁서";
+    // font-size: 40px;
+    // font-weight: 900;
+    // font-style: italic;
+    font: {
+        family: "궁서";
+        size: 40px;
+        weight: 900;
+        style: italic;
+    }
+}

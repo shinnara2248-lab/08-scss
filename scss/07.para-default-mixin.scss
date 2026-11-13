@@ -1,0 +1,19 @@
+// border
+// box1, box2 2px solid black => 많이 사용되는 속성
+// box3 1px solid red
+
+@mixin myBorder($width:2px,$color:black){
+    border: $width solid $color;
+}
+
+.box1{
+    @include myBorder();
+}
+
+.box2{
+    @include myBorder();
+}
+
+.box3{
+    @include myBorder(5px, red)
+}
